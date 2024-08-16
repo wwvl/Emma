@@ -22,5 +22,11 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/tmp": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
