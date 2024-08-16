@@ -1,0 +1,32 @@
+{
+    "version": "24.07r5332",
+    "description": "\"Find in Files\" prototype (GUI for ripgrep in C#) for Notepad4, see https://github.com/zufuliu/notepad4/issues/259.",
+    "homepage": "https://github.com/zufuliu/FindInFiles",
+    "license": "Unknown",
+    "suggest": {
+        ".NET Desktop Runtime": "extras/windowsdesktop-runtime-lts"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zufuliu/notepad4/releases/download/v24.07r5332/FindInFiles-net8.0.zip",
+            "hash": "13c0060772f0f1951d280c33fad1dea3a9fddf21b61563d5f72b449544344b6e"
+        }
+    },
+    "shortcuts": [
+        [
+            "FindInFiles.exe",
+            "FindInFiles"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repositories/79987996/releases",
+        "regex": "tag/v([r\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zufuliu/notepad4/releases/download/v$version/FindInFiles-net8.0.zip"
+            }
+        }
+    }
+}
