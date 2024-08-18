@@ -3,6 +3,7 @@
     "description": "\"Find in Files\" prototype (GUI for ripgrep in C#) for Notepad4, see https://github.com/zufuliu/notepad4/issues/259.",
     "homepage": "https://github.com/zufuliu/FindInFiles",
     "license": "Unknown",
+    "depends": "main/ripgrep",
     "suggest": {
         ".NET Desktop Runtime": "extras/windowsdesktop-runtime-lts"
     },
@@ -12,6 +13,7 @@
             "hash": "13c0060772f0f1951d280c33fad1dea3a9fddf21b61563d5f72b449544344b6e"
         }
     },
+    "pre_install": "New-Item -ItemType HardLink -Path \"$dir\" -Name \"rg.exe\" -Target \"$(appdir ripgrep $global)\\current\\rg.exe\" | Out-Null",
     "shortcuts": [
         [
             "FindInFiles.exe",
