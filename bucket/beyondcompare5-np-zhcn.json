@@ -29,6 +29,10 @@
         "  }",
         "}"
     ],
+    "pre_uninstall": [
+        "Stop-Process -Name 'BCompare.exe' -ErrorAction SilentlyContinue",
+        "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" }"
+    ],
     "bin": [
         "Bcomp.exe",
         "BCompare.exe"
