@@ -17,7 +17,7 @@
             "/DIR=$dir"
         ]
     },
-    "post_install": "Remove-Item \"$Env:AppData\\Microsoft\\Windows\\Start Menu\\Beyond Compare 5\" -ErrorAction Ignore -Force",
+    "post_install": "Remove-Item \"$Env:AppData\\Microsoft\\Windows\\Start Menu\\Beyond Compare 5.lnk\" -ErrorAction Ignore -Force",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
