@@ -6,7 +6,6 @@
         "identifier": "Shareware",
         "url": "https://www.scootersoftware.com/kb/licensev5"
     },
-    "notes": "Add Beyond Compare as a context menu option by running: '$dir\\install-context.reg'",
     "url": "https://www.scootersoftware.com/BCompare-zh-5.0.1.29877.exe#/setup.exe",
     "hash": "d5dcab2a2787a9b063ee599491570f75797c566f736bd9f556e0ac88be868b89",
     "installer": {
@@ -18,7 +17,7 @@
             "/DIR=$dir"
         ]
     },
-    "post_install": "Remove-Item -Recurse \"$([Environment]::GetFolderPath('commonstartmenu'))\\Beyond Compare 5\"",
+    "post_install": "Remove-Item \"$Env:AppData\\Microsoft\\Windows\\Start Menu\\Beyond Compare 5\" -ErrorAction Ignore -Force",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
