@@ -1,0 +1,18 @@
+{
+    "version": "0.2024.03.15",
+    "description": "Git Alias is a collection of git version control alias settings that can help you work faster and better.",
+    "homepage": "https://github.com/GitAlias/gitalias",
+    "license": "GPL-2.0-or-later",
+    "notes": "Install gitalias by running: 'git config --global include.path $dir\\.gitalias'",
+    "url": "https://github.com/GitAlias/gitalias/raw/007b29589b37962c305405d5f6b052cda8c0be68/gitalias.txt",
+    "hash": "d8d814a92fe25e98f2ad9dfceb7abb789d96f49b30c4045ab8c6a2288ea858b4",
+    "pre_install": "Rename-Item -Path \"$dir\\gitalias.txt\" -NewName \".gitalias\" -Force | Out-Null",
+    "checkver": {
+        "url": "https://github.com/GitAlias/gitalias/commits/main/gitalias.txt.atom",
+        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
+        "replace": "0.${1}.${2}.${3}"
+    },
+    "autoupdate": {
+        "url": "https://github.com/GitAlias/gitalias/raw/$matchSha/gitalias.txt"
+    }
+}
