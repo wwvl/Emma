@@ -15,8 +15,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://ugit.qq.com/changelog.json",
-        "jsonpath": "$.[0].version"
+        "url": "https://ugit.qq.com/downloads/ugit_public/release.json",
+        "jsonpath": "$.currentRelease"
     },
     "autoupdate": {
         "url": "https://ugit.qq.com/downloads/ugit_public/UGit-$version-full.nupkg"
