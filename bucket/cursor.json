@@ -15,8 +15,8 @@
             "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.40.4%20-%20Build%202409052yfcjagw2-x64.exe#/dl.7z",
             "hash": "sha512:287031ef583202dfb0c4dab91caa782d8ece7832a11d608e4a8ecfb9964f05e08a00606272047dc00d2e130619c7c673d253dc27631f623eb288e47a84b44d5e",
             "pre_install": [
-                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Recurse -Force",
-                "Remove-Item \"$dir\\`$*\" -Recurse"
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+                "Remove-Item \"$dir\\`$*\" -Recurse -Force"
             ],
             "post_install": [
                 "$dirpath = \"$dir\".Replace('\\', '\\\\')",
