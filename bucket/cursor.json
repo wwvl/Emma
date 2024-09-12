@@ -22,18 +22,23 @@
                 "$dirpath = \"$dir\".Replace('\\', '\\\\')",
                 "$exepath = \"$dir\\Cursor.exe\".Replace('\\', '\\\\')",
                 "'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context' | ForEach-Object {",
-                "  if (Test-Path \"$bucketsdir\\emma\\scripts\\cursor\\$_.reg\") {",
-                "    $content = Get-Content \"$bucketsdir\\emma\\scripts\\cursor\\$_.reg\"",
+                "  if (Test-Path \"$bucketsdir\\extras\\scripts\\vscode\\$_.reg\") {",
+                "    $content = Get-Content \"$bucketsdir\\extras\\scripts\\vscode\\$_.reg\"",
                 "    $content = $content.Replace('$codedir', $dirpath)",
                 "    $content = $content.Replace('$code', $exepath)",
                 "    $content = $content.Replace('&Code', '&Cursor')",
+                "    $content = $content.Replace('CodeOSS', 'Cursor')",
+                "    $content = $content.Replace('Microsoft', 'Anysphere')",
                 "    if ($global) {",
                 "      $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
                 "    }",
                 "    $content | Set-Content -Path \"$dir\\$_.reg\"",
                 "  }",
                 "}"
-            ]
+            ],
+            "uninstaller": {
+                "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" }"
+            }
         }
     },
     "bin": "Cursor.exe",
