@@ -1,0 +1,61 @@
+{
+    "version": "0.40.4",
+    "description": "人工智能代码编辑器。Cursor 是使用 AI 编写代码的最佳方式，能让您超常工作。",
+    "homepage": "https://www.cursor.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.cursor.com/terms-of-service"
+    },
+    "notes": [
+        "Add Cursor as a context menu option by running 'reg import \"$dir\\install-context.reg\"'",
+        "For file associations, run 'reg import \"$dir\\install-associations.reg\"'"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.40.4%20-%20Build%202409052yfcjagw2-x64.exe#/dl.7z",
+            "hash": "sha512:287031ef583202dfb0c4dab91caa782d8ece7832a11d608e4a8ecfb9964f05e08a00606272047dc00d2e130619c7c673d253dc27631f623eb288e47a84b44d5e",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Recurse -Force",
+                "Remove-Item \"$dir\\`$*\" -Recurse"
+            ],
+            "post_install": [
+                "$dirpath = \"$dir\".Replace('\\', '\\\\')",
+                "$exepath = \"$dir\\Cursor.exe\".Replace('\\', '\\\\')",
+                "'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context' | ForEach-Object {",
+                "  if (Test-Path \"$bucketsdir\\emma\\scripts\\cursor\\$_.reg\") {",
+                "    $content = Get-Content \"$bucketsdir\\emma\\scripts\\cursor\\$_.reg\"",
+                "    $content = $content.Replace('$codedir', $dirpath)",
+                "    $content = $content.Replace('$code', $exepath)",
+                "    $content = $content.Replace('&Code', '&Cursor')",
+                "    if ($global) {",
+                "      $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+                "    }",
+                "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+                "  }",
+                "}"
+            ]
+        }
+    },
+    "bin": "Cursor.exe",
+    "shortcuts": [
+        [
+            "Cursor.exe",
+            "Cursor"
+        ]
+    ],
+    "checkver": {
+        "url": "https://download.todesktop.com/230313mzl4w4u92/latest.yml",
+        "regex": "Cursor Setup (?<version>[\\d.]+) - Build (?<build>\\w+)-x64\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%20$matchVersion%20-%20Build%20$matchBuild-x64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    }
+}
