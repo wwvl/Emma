@@ -1,5 +1,5 @@
 {
-    "version": "24.07r5332",
+    "version": "24.09r5472",
     "description": "\"Find in Files\" prototype (GUI for ripgrep in C#) for Notepad4, see https://github.com/zufuliu/notepad4/issues/259.",
     "homepage": "https://github.com/zufuliu/FindInFiles",
     "license": "Unknown",
@@ -9,8 +9,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zufuliu/notepad4/releases/download/v24.07r5332/FindInFiles-net8.0.zip",
-            "hash": "13c0060772f0f1951d280c33fad1dea3a9fddf21b61563d5f72b449544344b6e"
+            "url": "https://github.com/zufuliu/notepad4/releases/download/v24.09r5472/FindInFiles-net8.0.zip",
+            "hash": "875df0308584460245c9311a3a166a7a9adea5a3fb546e9c230cb2d2f25eee64"
         }
     },
     "pre_install": "New-Item -ItemType HardLink -Path \"$dir\" -Name \"rg.exe\" -Target \"$(appdir ripgrep $global)\\current\\rg.exe\" | Out-Null",
