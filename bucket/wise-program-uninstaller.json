@@ -1,0 +1,32 @@
+{
+    "version": "3.2.1.264",
+    "description": "Download Wise Program Uninstaller, the best free removal tool to uninstall, modify or force delete unwanted and stubborn programs and browsers extensions fast and completely.",
+    "homepage": "https://www.wisecleaner.com/wise-program-uninstaller.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.wisecleaner.com/eula.html"
+    },
+    "url": "https://downloads.wisecleaner.com/soft/WPU_3.2.1.264.zip",
+    "hash": "4851412d3c17106bd89805165bce60eadb98239022ae846dd5f98e9a4a6a0e78",
+    "extract_dir": "WPUSetup_3.2.1.264",
+    "pre_install": [
+        "# Portable",
+        "$presist_files = @('config.ini')",
+        "$presist_files | ForEach-Object { if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" -ItemType File | Out-Null } }"
+    ],
+    "shortcuts": [
+        [
+            "WiseProgramUninstaller.exe",
+            "Wise Program Uninstaller"
+        ]
+    ],
+    "persist": "config.ini",
+    "checkver": {
+        "url": "https://www.wisecleaner.com/download.html",
+        "regex": "WPU_([\\d.]+)\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://downloads.wisecleaner.com/soft/WPU_$version.zip",
+        "extract_dir": "WPUSetup_$version"
+    }
+}
