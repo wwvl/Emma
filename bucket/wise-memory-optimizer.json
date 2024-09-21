@@ -1,0 +1,46 @@
+{
+    "version": "4.2.1.124",
+    "description": "The best free RAM (memory) cleaning and optimization tool for Windows computers. It can help you free up memory in use, increase available memory, defrag memory, and empty standby memory to get your computer running smoothly again.",
+    "homepage": "https://www.wisecleaner.com/wise-memory-optimizer.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.wisecleaner.com/eula.html"
+    },
+    "url": "https://downloads.wisecleaner.com/soft/WMO_4.2.1.124.zip",
+    "hash": "c117b28454d7c51b0f7eed48507f3aa686f512f25ffcbecfbf5d250cabe62ac9",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "WMO_4.2.1.124\\WMO_4.2.1.124(x64)"
+        },
+        "32bit": {
+            "extract_dir": "WMO_4.2.1.124\\WMO_4.2.1.124(x86)"
+        }
+    },
+    "pre_install": [
+        "# Portable",
+        "$presist_files = @('config.ini')",
+        "$presist_files | ForEach-Object { if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" -ItemType File | Out-Null } }"
+    ],
+    "shortcuts": [
+        [
+            "WiseMemoryOptimzer.exe",
+            "Wise Memory Optimizer"
+        ]
+    ],
+    "persist": "config.ini",
+    "checkver": {
+        "url": "https://www.wisecleaner.com/download.html",
+        "regex": "WMO_([\\d.]+)\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://downloads.wisecleaner.com/soft/WMO_$version.zip",
+        "architecture": {
+            "64bit": {
+                "extract_dir": "WMO_$version\\WMO_$version(x64)"
+            },
+            "32bit": {
+                "extract_dir": "WMO_$version\\WMO_$version(x86)"
+            }
+        }
+    }
+}
