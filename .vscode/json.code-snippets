@@ -4,7 +4,7 @@
         "scope": "json,jsonc",
         "body": [
             "{",
-            "\t\"version\": \"$1\",",
+            "\t\"version\": \"1.0.0$1\",",
             "\t\"description\": \"$2\",",
             "\t\"homepage\": \"$3\",",
             "\t\"license\": {\"identifier\": \"$4\"},",
