@@ -26,7 +26,7 @@
             ]
         }
     },
-    "post_install": [
+    "pre_uninstall": [
         "if ($architecture -eq '64bit') {",
         "   Start-Process 'regsvr32' -ArgumentList @('/u', \"$dir\\PCC64.dll\", '/s') -Verb 'RunAs' -Wait",
         "}",
