@@ -1,0 +1,24 @@
+{
+    "version": "1.4.7",
+    "description": "MyHash. 一款采用并行计算，充分利用多核 CPU 性能，快速计算文件哈希值的工具。",
+    "homepage": "https://github.com/drag0n-app/MyHash",
+    "license": "Freeware",
+    "url": "https://github.com/drag0n-app/MyHash/raw/master/MyHash_1.4.7_Final_drag0n.7z",
+    "hash": "6f763beadbefb4903deca05edd32bddda3130b5b4e5ecbf1664948d96c65bb27",
+    "architecture": {
+        "64bit": {
+            "pre_install": "Get-ChildItem \"$dir\\*64.*\" | Rename-Item -NewName { $_.FullName -replace ',64\\.', '.' }"
+        },
+        "32bit": {
+            "pre_install": "Remove-Item \"$dir\\MyHash64.exe\",\"$dir\\MyHash64.ini\",\"$dir\\MyHashExt64.dll\" -Force -ErrorAction SilentlyContinue"
+        }
+    },
+    "bin": "MyHash.exe",
+    "shortcuts": [
+        [
+            "MyHash.exe",
+            "MyHash"
+        ]
+    ],
+    "persist": "MyHash.ini"
+}
