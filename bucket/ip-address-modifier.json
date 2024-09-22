@@ -5,7 +5,7 @@
     "license": "Freeware",
     "notes": "按 F1 可以查看软件说明，按 F8 就是工具箱。问问题前，请先按 F1 看软件说明，或许可以解答你的疑问。",
     "url": "https://dl.kn007.net/directlink/IP%E5%9C%B0%E5%9D%80%E4%BF%AE%E6%94%B9%E5%99%A8.rar#dl.zip_",
-    "hash": "sha1:5bd1075025c9362008556f561c57d8dc6c7c0f05",
+    "hash": "sha1:11283fdd99740af1a78d2fa7e186f41f8f2457be",
     "pre_install": [
         "$7z=(Get-ChildItem $dir\\IP*).Name",
         "7z x -pkn007.net $dir\\$7z $('-o' + $dir) | Out-Null",
