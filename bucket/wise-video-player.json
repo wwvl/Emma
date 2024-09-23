@@ -18,7 +18,11 @@
     "checkver": {
         "script": [
             "$url = 'https://www.wisecleaner.com/index.php?r=download-product/latest-version&product=wise-video-player'",
-            "$req = Invoke-WebRequest -Uri $url -MaximumRedirection 0 -ErrorAction SilentlyContinue -SkipHttpErrorCheck",
+            "if ($PSVersionTable.PSVersion.Major -lt 7.0) {",
+            "    $req = Invoke-WebRequest -Uri $url -MaximumRedirection 0 -ErrorAction SilentlyContinue",
+            "} else {",
+            "    $req = Invoke-WebRequest -Uri $url -MaximumRedirection 0 -ErrorAction SilentlyContinue -SkipHttpErrorCheck",
+            "}",
             "Write-Output $req.Headers.Location"
         ],
         "regex": "WVPSetup_([\\d.]+)\\.exe"
