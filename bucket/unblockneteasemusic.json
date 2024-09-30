@@ -1,0 +1,28 @@
+{
+    "version": "0.27.8",
+    "description": "UnblockNeteaseMusic. 解锁网易云音乐客户端变灰歌曲。",
+    "homepage": "https://github.com/UnblockNeteaseMusic/server",
+    "license": "GPL-3.0-or-later|LGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/UnblockNeteaseMusic/server/releases/download/v0.27.8/unblockneteasemusic-win-x64.exe#/unblockneteasemusic.exe",
+            "hash": "e069d7d66908cc58ba04201f60fffc1a95e5ff7772796f248efaa7676b25232c"
+        },
+        "arm64": {
+            "url": "https://github.com/UnblockNeteaseMusic/server/releases/download/v0.27.8/unblockneteasemusic-win-arm64.exe#/unblockneteasemusic.exe",
+            "hash": "ed1454280d0c6856b8971c965fbc0d8138dfb442a2434a3a995e1b5f2b781770"
+        }
+    },
+    "bin": "unblockneteasemusic.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/UnblockNeteaseMusic/server/releases/download/v$version/unblockneteasemusic-win-x64.exe#/unblockneteasemusic.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/UnblockNeteaseMusic/server/releases/download/v$version/unblockneteasemusic-win-arm64.exe#/unblockneteasemusic.exe"
+            }
+        }
+    }
+}
