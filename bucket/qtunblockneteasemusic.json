@@ -13,6 +13,7 @@
     "extract_dir": "QtUnblockNeteaseMusic",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.ini\")) { New-Item \"$persist_dir\\config.ini\" -ItemType File | Out-Null }",
+        "Remove-Item \"$dir\\unblockneteasemusic-win-x64.exe\" -Force",
         "New-Item -ItemType HardLink -Path \"$dir\\unblockneteasemusic-win-x64.exe\" -Target \"$(appdir unblockneteasemusic $global)\\current\\unblockneteasemusic.exe\" | Out-Null"
     ],
     "shortcuts": [
