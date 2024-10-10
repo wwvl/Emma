@@ -1,5 +1,5 @@
 {
-    "version": "0.41.3",
+    "version": "0.42.0",
     "description": "人工智能代码编辑器。Cursor 是使用 AI 编写代码的最佳方式，能让您超常工作。",
     "homepage": "https://www.cursor.com",
     "license": {
@@ -12,8 +12,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.41.3%20-%20Build%20240925fkhcqg263-x64.exe#/dl.7z",
-            "hash": "sha512:47c8bbe49c7360fb60140684461e34bec22eb75b097f92030acbd5dff59576370d83f5a1f9ec3d31f16ecf6879cf8d998fcf73505735e9599c45f5c572b932b2",
+            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.42.0%20-%20Build%20241009fij7nohn5-x64.exe#/dl.7z",
+            "hash": "sha512:3883e61955e8514712b13959fb5ff8fd09e39da1375ef39ee83e8fa14590da487e297c7e57915ff4c8f42f2c98a3279eaf43da2fd7d863f99102d2e5566fe6f1",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse -Force"
