@@ -13,7 +13,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.42.0%20-%20Build%20241009fij7nohn5-x64.exe#/dl.7z",
-            "hash": "sha512:3883e61955e8514712b13959fb5ff8fd09e39da1375ef39ee83e8fa14590da487e297c7e57915ff4c8f42f2c98a3279eaf43da2fd7d863f99102d2e5566fe6f1",
+            "hash": "sha512:92c28c708c04ef7ee8aaf245ff9fb59cdfcc792863ee4d8bc331311da0cdf95e9ae753f990a3bf2750691b8b7b1bd461f07c7f315c022063495ca439082b1ec4",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse -Force"
