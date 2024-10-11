@@ -17,9 +17,7 @@
             "HashCalculator"
         ]
     ],
-    "persist": [
-        "settings.json"
-    ],
+    "persist": "settings.json",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/hrpzcf/HashCalculator/releases/download/$version/HashCalculator-$version.zip",
