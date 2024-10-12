@@ -40,12 +40,9 @@
     ],
     "env_set": {
         "GOROOT": "$dir",
+        "GO111MODULE": "on",
         "GOPATH": "$dir\\global_path",
-        "GOPROXY": "http://nexus.eryajf.net/repository/go/",
-        "GONOPROXY": "gitlab.eryajf.net",
-        "GONOSUMDB": "gitlab.eryajf.net",
-        "GOPRIVATE": "gitlab.eryajf.net",
-        "GOSUMDB": "sum.golang.google.cn"
+        "GOPROXY": "https://goproxy.cn"
     },
     "checkver": {
         "url": "https://golang.org/dl/",
