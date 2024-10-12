@@ -1,0 +1,22 @@
+{
+    "version": "1.1.6",
+    "description": "ria2 Manager is a useful tool that allows user to run Aria2 in the background easily.",
+    "homepage": "https://github.com/alexhua/Aria2-Manager",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.6/Aria2Manager-Full.zip",
+    "hash": "6ad44a92cad52511d2f5f54292db81fa534a2fdc16dfa76b95c961350ba97d85",
+    "shortcuts": [
+        [
+            "Aria2Manager.exe",
+            "Aria2 Manager"
+        ]
+    ],
+    "persist": [
+        "aria2.conf",
+        "aria2.session"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/alexhua/Aria2-Manager/releases/download/v$version/Aria2Manager-Full.zip"
+    }
+}
