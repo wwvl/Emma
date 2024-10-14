@@ -1,27 +1,35 @@
 {
     "version": "1.1.6",
-    "description": "ria2 Manager is a useful tool that allows user to run Aria2 in the background easily.",
+    "description": "Aria2 Manager is a useful tool that allows user to run Aria2 in the background easily.",
     "homepage": "https://github.com/alexhua/Aria2-Manager",
     "license": "BSD-3-Clause",
     "depends": [
         "main/aria2",
         "emma/aria2-conf"
     ],
+    "notes": "Edit \"$dir\\aria2.conf\" file before using this software.",
     "url": "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.6/Aria2Manager.zip",
     "hash": "bff130d71a08a65df6e28059a00f48fea08e3357817a17a5b6277b7cb9a96a43",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\aria2.session\")) { New-Item \"$persist_dir\\aria2.session\" -ItemType File | Out-Null }",
         "Copy-Item \"$(appdir aria2 $global)\\current\\aria2c.exe\" \"$dir\" | Out-Null",
-        "('aria2.conf', 'dht.dat', 'dht6.dat') | ForEach-Object {",
+        "('dht.dat', 'dht6.dat') | ForEach-Object {",
         "  if (!(Test-Path \"$dir\\$_\")) { Copy-Item \"$(appdir aria2-conf $global)\\current\\$_\" \"$dir\" | Out-Null }",
+        "}",
+        "@('aria2.conf', 'update_aria2_bt-tracker.ps1', 'update_aria2_bt-tracker.py') | ForEach-Object {",
+        "    Copy-Item \"$bucketsdir\\emma\\scripts\\aria2\\$_\" \"$dir\\$_\"",
         "}"
     ],
     "post_install": [
-        "$downloadsPath = \"$dir\\downloads\"",
+        "$downloadsPath = \"$env:USERPROFILE\\Downloads\"",
         "$content = Get-Content \"$dir\\aria2.conf\"",
-        "$content = $content.Replace('/root/.aria2', $dir)",
+        "$content = $content.Replace('/root/.aria2/', $dir)",
         "$content = $content.Replace('dir=/root/Download', \"dir=$downloadsPath\")",
         "$content | Set-Content \"$dir\\aria2.conf\""
+    ],
+    "bin": [
+        "update_aria2_bt-tracker.ps1",
+        "update_aria2_bt-tracker.py"
     ],
     "shortcuts": [
         [
@@ -31,8 +39,7 @@
     ],
     "persist": [
         "aria2.session",
-        "aria2.conf",
-        "downloads"
+        "aria2.conf"
     ],
     "checkver": "github",
     "autoupdate": {
