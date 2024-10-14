@@ -1,0 +1,36 @@
+{
+    "version": "1.0",
+    "description": "Mile.Aria2. Customized version of aria2, specialize for MSVC toolchain.",
+    "homepage": "https://github.com/ProjectMile/Mile.Aria2",
+    "license": "MIT|GPL-2.0-or-later",
+    "url": "https://github.com/Mile-02/Mile-Aria2/releases/download/v1.0.0/Mile-Aria2-v1.0.0-win-x64.zip",
+    "hash": "9db68050bc1160739800bb17ac129b2f914ff93b684cc7ca0ee75cfd06045c00",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "ARM64"
+        },
+        "32bit": {
+            "extract_dir": "x86"
+        },
+        "arm64": {
+            "extract_dir": "ARM64"
+        }
+    },
+    "post_install": [
+        "if (Test-Path -Path \"$(appdir aria2-manager $global)\\current\\aria2c.exe\") {",
+        "  Get-ChildItem \"$(appdir aria2-manager $global)\\current\\aria2c.exe\" | Rename-Item -NewName 'aria2c.exe.bak'",
+        "  Copy-Item \"$dir\\Mile.Aria2.exe\" \"$(appdir aria2-manager $global)\\current\\aria2c.exe\"",
+        "}"
+    ],
+    "pre_uninstall": [
+        "if (Test-Path -Path \"$(appdir aria2-manager $global)\\current\\aria2c.exe.bak\") {",
+        "  Remove-Item \"$(appdir aria2-manager $global)\\current\\aria2c.exe\" -Force",
+        "  Get-ChildItem \"$(appdir aria2-manager $global)\\current\\aria2c.exe.bak\" | Rename-Item -NewName 'aria2c.exe'",
+        "}"
+    ],
+    "bin": "Mile.Aria2.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/ProjectMile/Mile.Aria2/releases/download/$version/Mile.Aria2_$version_Binaries.zip"
+    }
+}
