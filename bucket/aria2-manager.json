@@ -25,7 +25,7 @@
         "$downloadsPath = \"$env:USERPROFILE\\Downloads\"",
         "$content = Get-Content \"$dir\\aria2.conf\"",
         "$content = $content.Replace('/root/.aria2/', $dir)",
-        "$content = $content.Replace('dir=/root/Download', \"dir=$downloadsPath\")",
+        "$content = $content.Replace('dir=/root/Download', \"dir=$downloadsPath\\\")",
         "$content | Set-Content \"$dir\\aria2.conf\""
     ],
     "bin": [
