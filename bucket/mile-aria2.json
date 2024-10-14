@@ -1,10 +1,10 @@
 {
-    "version": "1.0",
+    "version": "1.0.230.0",
     "description": "Mile.Aria2. Customized version of aria2, specialize for MSVC toolchain.",
     "homepage": "https://github.com/ProjectMile/Mile.Aria2",
     "license": "MIT|GPL-2.0-or-later",
-    "url": "https://github.com/Mile-02/Mile-Aria2/releases/download/v1.0.0/Mile-Aria2-v1.0.0-win-x64.zip",
-    "hash": "9db68050bc1160739800bb17ac129b2f914ff93b684cc7ca0ee75cfd06045c00",
+    "url": "https://github.com/ProjectMile/Mile.Aria2/releases/download/1.0.230.0/Mile.Aria2_1.0.230.0_Binaries.zip",
+    "hash": "4050d5de207700a3aede0b719f7451342137fb948db51117a961018afc5330e6",
     "architecture": {
         "64bit": {
             "extract_dir": "ARM64"
