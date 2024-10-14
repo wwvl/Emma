@@ -3,24 +3,23 @@
     "description": "Aria2 Manager is a useful tool that allows user to run Aria2 in the background easily.",
     "homepage": "https://github.com/alexhua/Aria2-Manager",
     "license": "BSD-3-Clause",
-    "depends": [
-        "main/aria2",
-        "emma/aria2-conf"
-    ],
+    "depends": "main/aria2",
     "notes": "Edit \"$dir\\aria2.conf\" file before using this software.",
-    "url": "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.6/Aria2Manager.zip",
-    "hash": "bff130d71a08a65df6e28059a00f48fea08e3357817a17a5b6277b7cb9a96a43",
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\aria2.session\")) { New-Item \"$persist_dir\\aria2.session\" -ItemType File | Out-Null }",
-        "Copy-Item \"$(appdir aria2 $global)\\current\\aria2c.exe\" \"$dir\" | Out-Null",
-        "('dht.dat', 'dht6.dat') | ForEach-Object {",
-        "  if (!(Test-Path \"$dir\\$_\")) { Copy-Item \"$(appdir aria2-conf $global)\\current\\$_\" \"$dir\" | Out-Null }",
-        "}",
+    "url": [
+        "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.6/Aria2Manager.zip",
+        "https://fastly.jsdelivr.net/gh/P3TERX/aria2.conf@master/dht6.dat",
+        "https://fastly.jsdelivr.net/gh/P3TERX/aria2.conf@master/dht.dat"
+    ],
+    "hash": [
+        "bff130d71a08a65df6e28059a00f48fea08e3357817a17a5b6277b7cb9a96a43",
+        "2dd69993cdafd891bce2d7f933f43f55110a8294a9ddf1c38f1b5d7b8a9c6182",
+        "c80023968ec6df359be576c82c772793910e6768b8169e2d90c8faa3d6ad7d08"
+    ],
+    "pre_install": "if (!(Test-Path \"$persist_dir\\aria2.session\")) { New-Item -ItemType File \"$dir\\aria2.session\" | Out-Null }",
+    "post_install": [
         "@('aria2.conf', 'update_aria2_bt-tracker.ps1', 'update_aria2_bt-tracker.py') | ForEach-Object {",
         "    Copy-Item \"$bucketsdir\\emma\\scripts\\aria2\\$_\" \"$dir\\$_\"",
-        "}"
-    ],
-    "post_install": [
+        "}",
         "$downloadsPath = \"$env:USERPROFILE\\Downloads\"",
         "$content = Get-Content \"$dir\\aria2.conf\"",
         "$content = $content.Replace('/root/.aria2/', $dir)",
