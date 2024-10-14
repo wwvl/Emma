@@ -15,11 +15,13 @@
         "2dd69993cdafd891bce2d7f933f43f55110a8294a9ddf1c38f1b5d7b8a9c6182",
         "c80023968ec6df359be576c82c772793910e6768b8169e2d90c8faa3d6ad7d08"
     ],
-    "pre_install": "if (!(Test-Path \"$persist_dir\\aria2.session\")) { New-Item -ItemType File \"$dir\\aria2.session\" | Out-Null }",
-    "post_install": [
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\aria2.session\")) { New-Item -ItemType File \"$dir\\aria2.session\" | Out-Null }",
         "@('aria2.conf', 'update_aria2_bt-tracker.ps1', 'update_aria2_bt-tracker.py') | ForEach-Object {",
         "    Copy-Item \"$bucketsdir\\emma\\scripts\\aria2\\$_\" \"$dir\\$_\"",
-        "}",
+        "}"
+    ],
+    "post_install": [
         "$downloadsPath = \"$env:USERPROFILE\\Downloads\"",
         "$content = Get-Content \"$dir\\aria2.conf\"",
         "$content = $content.Replace('/root/.aria2/', $dir)",
