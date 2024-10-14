@@ -1,10 +1,10 @@
 {
-    "version": "5.23.2",
+    "version": "5.23.3",
     "description": "腾讯自研 Git 客户端，让每个人都可以轻松使用 Git.",
     "homepage": "https://ugit.qq.com",
     "license": "Freeware",
-    "url": "https://ugit.qq.com/downloads/ugit_public/UGit-5.23.2-full.nupkg",
-    "hash": "ac47951548b046b88bbeb8bde7586180b948fd1036b62ff0ef76d6bd542e73cb",
+    "url": "https://ugit.qq.com/downloads/ugit_public/UGit-5.23.3-full.nupkg",
+    "hash": "463773b11c64ec5586ae7b241d024fc4060dc25894ae1c79d3fabd39682a3aff",
     "extract_dir": "lib\\net45",
     "post_install": "Remove-Item \"$dir\\*\" -Include 'UGit_ExecutionStub.exe', 'lib', '7z.*' -Recurse",
     "bin": "UGit.exe",
