@@ -1,14 +1,14 @@
 {
-    "version": "7.0.6.688",
+    "version": "7.0.7.689",
     "description": "Wise Care 365 is an all-in-one system tune up tool. Speed up slow computer (laptop and desktop). Clean registry and junk files from your PC. Protect your privacy and make your PC more secure.",
     "homepage": "https://www.wisecleaner.com/wise-care-365.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WiseCare365_7.0.6.688.zip",
-    "hash": "b763bfe80164ec24a8e749d98c35ddbb165ddcd6761f2d35e2132085f632d1ba",
-    "extract_dir": "WiseCare365_7.0.6.688",
+    "url": "https://downloads.wisecleaner.com/soft/WiseCare365_7.0.7.689.zip",
+    "hash": "24376b3688d3bd84239e85e83955163fd384e8eee02ebec722f7438a4e4b62d9",
+    "extract_dir": "WiseCare365_7.0.7.689",
     "pre_install": [
         "# Portable",
         "$presist_files = @('CheckupExclude.lst', 'config.ini', 'config_tray.ini', 'exclusions.dat')",
