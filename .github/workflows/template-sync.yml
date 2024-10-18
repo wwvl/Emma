@@ -11,12 +11,16 @@ on:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
+    # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@main
       - name: actions-template-sync
-        uses: AndreasAugustin/actions-template-sync@v2
+        uses: AndreasAugustin/actions-template-sync@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
+          pr_labels: template_sync
