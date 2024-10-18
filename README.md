@@ -1,6 +1,8 @@
 # Emma
 
-[![Tests](https://github.com/wwvl/Emma/actions/workflows/ci.yml/badge.svg)](https://github.com/wwvl/Emma/actions/workflows/ci.yml) [![Excavator](https://github.com/wwvl/Emma/actions/workflows/excavator.yml/badge.svg)](https://github.com/wwvl/Emma/actions/workflows/excavator.yml)
+<!-- [![Tests](https://github.com/wwvl/Emma/actions/workflows/ci.yml/badge.svg)](https://github.com/wwvl/Emma/actions/workflows/ci.yml)-->
+
+[![Excavator](https://github.com/wwvl/Emma/actions/workflows/excavator.yml/badge.svg)](https://github.com/wwvl/Emma/actions/workflows/excavator.yml)
 
 Personal bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
