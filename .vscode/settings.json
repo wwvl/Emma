@@ -1,5 +1,8 @@
 // Configure PSScriptAnalyzer settings
 {
+    "[powershell]": {
+        "editor.formatOnSave": true
+    },
     "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
     "powershell.codeFormatting.preset": "OTBS",
     "powershell.codeFormatting.alignPropertyValuePairs": true,
@@ -12,6 +15,7 @@
             ]
         }
     ],
+    "files.insertFinalNewline": true,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
