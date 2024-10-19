@@ -1,0 +1,58 @@
+name: Sync JetBrains Manifests
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  sync-and-edit:
+    runs-on: ubuntu-latest
+    permissions: # Job-level permissions configuration starts here
+      contents: write # 'write' access to repository contents
+      pull-requests: write # 'write' access to pull requests
+    steps:
+      - name: Checkout Bucket
+        uses: actions/checkout@main
+
+      - name: Checkout Extras
+        uses: actions/checkout@main
+        with:
+          repository: ScoopInstaller/Extras
+          path: Extras
+
+      - name: Sync JetBrains Manifests
+        run: |
+          cd Extras/bucket
+          files=$(grep -l "download.jetbrains.com" *.json)
+          for file in $files; do
+            sed 's/download\.jetbrains\.com/download-cdn.jetbrains.com.cn/g' "$file" > "../../bucket/${file%.json}-cn.json"
+          done
+          cd ../..
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Clean up
+        if: always()
+        run: |
+          rm -rf Extras
+
+      - name: Commit changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: git commit -m "Update JetBrains manifests"
+
+      - name: Push changes
+        if: steps.git-check.outputs.changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
