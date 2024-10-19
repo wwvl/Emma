@@ -1,0 +1,35 @@
+{
+    "version": "2024.2.6",
+    "description": "DotMemory. Memory Profile & Unit testing framework for .NET by JetBrains.",
+    "homepage": "https://www.jetbrains.com/dotmemory/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download-cdn.jetbrains.com.cn/resharper/dotUltimate.2024.2.6/dotMemory.UI.64.2024.2.6.exe#/dotMemory.exe",
+            "hash": "86eb6a1dd134aab9f22311c229fd9fef5a677754d8da5f1bbb5398920754f2eb"
+        }
+    },
+    "shortcuts": [
+        [
+            "dotMemory.exe",
+            "dotMemory"
+        ]
+    ],
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=DM&latest=true&platform=zip&type=release",
+        "jsonpath": "$..version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download-cdn.jetbrains.com.cn/resharper/dotUltimate.$version/dotMemory.UI.64.$version.exe#/dotMemory.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
