@@ -30,6 +30,10 @@ jobs:
           done
           cd ../..
 
+      - name: Clean up
+        if: always()
+        run: rm -rf Extras
+
       - name: Check for changes
         id: git-check
         run: |
@@ -41,14 +45,12 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Clean up
-        if: always()
-        run: |
-          rm -rf Extras
-
       - name: Commit changes
         if: steps.git-check.outputs.changes == 'true'
-        run: git commit -m "Update JetBrains manifests"
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Update JetBrains manifests"
 
       - name: Push changes
         if: steps.git-check.outputs.changes == 'true'
