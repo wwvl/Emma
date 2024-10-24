@@ -1,13 +1,13 @@
 {
-    "version": "5.0.2.30045",
+    "version": "5.0.3.30258",
     "description": "Beyond Compare 是一款用于比较文件和文件夹的实用程序。它可以帮助您查找和协调源代码、文件夹、图像和数据中的差异，即使您的文件包含在 zip 压缩文件中或位于远程服务 (例如 FTP 站点) 上。它可以同步您的文件夹并验证您的副本。",
     "homepage": "https://www.scootersoftware.com/index.php",
     "license": {
         "identifier": "Shareware",
         "url": "https://www.scootersoftware.com/kb/licensev5"
     },
-    "url": "https://www.scootersoftware.com/BCompare-zh-5.0.2.30045.exe#/setup.exe",
-    "hash": "f975875299a6a264fee2eb5e185f02d4513dcbd826cf995b66ad0d992048aa2a",
+    "url": "https://www.scootersoftware.com/BCompare-zh-5.0.3.30258.exe#/setup.exe",
+    "hash": "ec7d257ff30856dd3a47de152ae6892af98732940d44341153203f383d01fc78",
     "installer": {
         "args": [
             "/VERYSILENT",
