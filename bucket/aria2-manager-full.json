@@ -1,11 +1,11 @@
 {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Aria2 Manager is a useful tool that allows user to run Aria2 in the background easily.",
     "homepage": "https://github.com/alexhua/Aria2-Manager",
     "license": "BSD-3-Clause",
     "notes": "Edit \"$dir\\aria2.conf\" file before using this software.",
-    "url": "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.6/Aria2Manager-Full.zip",
-    "hash": "6ad44a92cad52511d2f5f54292db81fa534a2fdc16dfa76b95c961350ba97d85",
+    "url": "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.7/Aria2Manager-Full.zip",
+    "hash": "50d5c14c4bc454169cc96eb63679e8f308d8a0832d584e274ec2b935a7c58e89",
     "pre_install": [
         "@('update_aria2_bt-tracker.ps1', 'update_aria2_bt-tracker.py') | ForEach-Object {",
         "    Copy-Item \"$bucketsdir\\emma\\scripts\\aria2\\$_\" \"$dir\\$_\"",
