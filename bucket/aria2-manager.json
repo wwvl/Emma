@@ -1,17 +1,17 @@
 {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Aria2 Manager is a useful tool that allows user to run Aria2 in the background easily.",
     "homepage": "https://github.com/alexhua/Aria2-Manager",
     "license": "BSD-3-Clause",
     "depends": "main/aria2",
     "notes": "Edit \"$dir\\aria2.conf\" file before using this software.",
     "url": [
-        "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.6/Aria2Manager.zip",
+        "https://github.com/alexhua/Aria2-Manager/releases/download/v1.1.7/Aria2Manager.zip",
         "https://fastly.jsdelivr.net/gh/P3TERX/aria2.conf@master/dht6.dat",
         "https://fastly.jsdelivr.net/gh/P3TERX/aria2.conf@master/dht.dat"
     ],
     "hash": [
-        "bff130d71a08a65df6e28059a00f48fea08e3357817a17a5b6277b7cb9a96a43",
+        "5958018f3a0ac003e6cc846baf3b4e0c844a0250376967362bada63d6b2e4b89",
         "2dd69993cdafd891bce2d7f933f43f55110a8294a9ddf1c38f1b5d7b8a9c6182",
         "c80023968ec6df359be576c82c772793910e6768b8169e2d90c8faa3d6ad7d08"
     ],
