@@ -1,5 +1,5 @@
 {
-    "version": "17.1.10",
+    "version": "17.1.11",
     "description": "Navicat Premium 是一套可创建多个连接的数据库开发工具，让你从单一应用程序中同时连接 MySQL、PostgreSQL、MongoDB、MariaDB、SQL Server、Oracle、SQLite 和 Redis。它与 GaussDB、OceanBase、PolarDB 数据库及 Amazon RDS、Amazon Aurora、Amazon Redshift、Amazon ElastiCache、Microsoft Azure、Oracle Cloud、MongoDB Atlas、Redis Enterprise Cloud、阿里云、腾讯云和华为云等云数据库兼容。你可以快速轻松地创建、管理和维护数据库。",
     "homepage": "https://www.navicat.com/en/products/navicat-premium",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dn.navicat.com/download/navicat17_premium_cs_x64.exe",
-            "hash": "7aed76bdacd6144ff729c64936d174b08c3cc17652766cb6ac5dbba1454cf305"
+            "hash": "643bf4234c08bef116fdf95b3f5b7ec1657051d52006a96b5e3ce75ea0e1eb61"
         }
     },
     "innosetup": true,
