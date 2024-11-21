@@ -1,13 +1,13 @@
 {
-    "version": "1.2.8.10",
+    "version": "1.3.1.11",
     "description": "Wise ImageX helps you repair old or damaged photos, enlarge images and keep a high-definition resolution, compress images without quality loss, colorize black and white pictures, and very interesting face-swapping.",
     "homepage": "https://www.wisecleaner.com/wise-imagex.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WiseImageX_1.2.8.10.exe",
-    "hash": "3ec14df1af6f679c937b09c413d16895b8246bc8c48ed2eb34593aa719e9db22",
+    "url": "https://downloads.wisecleaner.com/soft/WiseImageX_1.3.1.11.exe",
+    "hash": "f20921fa11851f3c8b8931ef543feb826042304dfcbfd2275175ac1d28a9e9ff",
     "innosetup": true,
     "shortcuts": [
         [
