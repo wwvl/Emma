@@ -1,10 +1,10 @@
 {
-    "version": "5.27.0",
+    "version": "5.28.0",
     "description": "HashCalculator 是一个文件哈希值计算工具，为批量计算、批量校验文件的哈希值而生，期望能减少批量计算、校验、统计、查找、筛选方面的麻烦。",
     "homepage": "https://github.com/hrpzcf/HashCalculator",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/hrpzcf/HashCalculator/releases/download/5.27.0/HashCalculator-5.27.0.zip",
-    "hash": "b56d164d518f954cbe73a9020c7377f7e3b15be41c29e6c237add157cf335fdc",
+    "url": "https://github.com/hrpzcf/HashCalculator/releases/download/5.28.0/HashCalculator-5.28.0.zip",
+    "hash": "d7816a7a410b6d327228706b78015217fc1f97e87e48fd5dd1ea8b32d9e17929",
     "pre_install": [
         "Start-Process \"$dir\\HashCalculator.exe\" -ArgumentList @('shell', '-i', '-s') -Wait",
         "if (!(Test-Path \"$persist_dir\\settings.json\")) { Set-Content \"$dir\\settings.json\" '{}' }"
