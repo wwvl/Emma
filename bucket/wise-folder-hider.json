@@ -1,13 +1,13 @@
 {
-    "version": "5.0.7.237",
+    "version": "5.0.8.238",
     "description": "Wise Folder Hider is the best freeware to hide or lock folders and files. Protect your private data or important files from prying eyes with double password protection.",
     "homepage": "https://www.wisecleaner.com/wise-folder-hider.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WFHSetup_5.0.7.237.exe",
-    "hash": "92662783f5ac6665f57ec42c679f78cbd717c24674bc26da2b4ed8e227624744",
+    "url": "https://downloads.wisecleaner.com/soft/WFHSetup_5.0.8.238.exe",
+    "hash": "a289725510fc16aa848fdafcf50df9316dc47446ac920c730c88154bcf228eb5",
     "innosetup": true,
     "shortcuts": [
         [
