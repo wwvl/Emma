@@ -1,5 +1,5 @@
 {
-    "version": "0.44.11",
+    "version": "0.45.1",
     "description": "人工智能代码编辑器。Cursor 是使用 AI 编写代码的最佳方式，能让您超常工作。",
     "homepage": "https://www.cursor.com",
     "license": {
@@ -12,24 +12,24 @@
     ],
     "architecture": {
         "32bit": {
-            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.44.11%20-%20Build%20250103fqxdt5u9z.exe#/dl.7z",
-            "hash": "sha512:c2a10f7d8022ea29bbd6db7e37142077d72d0a575dc9f920c45c562d8ae12dcf39fdfd592938df0a4cf7ab26faf1c648a88b84348d4e8fa42ec4c20657a5f923",
+            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.45.1%20-%20Build%202501213ljml5byg.exe#/dl.7z",
+            "hash": "sha512:697f9ab7e7ff574238519a233f88d8cef80e964dd8c12022bf9fb79355c2ab920661b01d7550e3ddd0881f7c2b1ae042ae27e5a4a8b1364229f2629a26fa3781",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse -Force"
             ]
         },
         "64bit": {
-            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.44.11%20-%20Build%20250103fqxdt5u9z-x64.exe#/dl.7z",
-            "hash": "sha512:438fda7d654819d9f4fc116071cfbd38fa21fd6754b3731543365f97fe7ee959cc7172acce36adbda4bfed7f623d2e4e6ae7258715492b764e91b90494f23630",
+            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.45.1%20-%20Build%202501213ljml5byg-x64.exe#/dl.7z",
+            "hash": "sha512:a888dcec66bf4279218778d4c84c8118f74761cd2b6e28d45e8d826a083a5d240281737afb0103fc4ee50fb98aeab07370312e4afb44910d4daeace850dbf24d",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse -Force"
             ]
         },
         "arm64": {
-            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.44.11%20-%20Build%20250103fqxdt5u9z-arm64.exe#/dl.7z",
-            "hash": "sha512:cb79380bb5d409d9585864f698b6b186dd98041d55c86a75598bdbd542c93d23ecc0ab2a8f71640ba49bd9ecfaca7b13b41513426b2f09562c214e6ac0ba4c45",
+            "url": "https://download.todesktop.com/230313mzl4w4u92/Cursor%20Setup%200.45.1%20-%20Build%202501213ljml5byg-arm64.exe#/dl.7z",
+            "hash": "sha512:fdc4ee2cfc2d482e3471702127c383816c84d4a020a2f46679755a2bb5d2d7b402c3b7dc2b8b2a09590f4b3cd39e2440e26ecdf6a7398f64437035534bc9ccae",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse -Force"
