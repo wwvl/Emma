@@ -1,11 +1,11 @@
 {
-    "version": "0.2024.0824.8e0262",
+    "version": "0.2025.0216.db6b6f",
     "description": "Git Alias is a collection of git version control alias settings that can help you work faster and better.",
     "homepage": "https://github.com/GitAlias/gitalias",
     "license": "GPL-2.0-or-later",
     "notes": "Install gitalias by running: 'git config --global include.path $dir\\.gitalias'",
-    "url": "https://github.com/GitAlias/gitalias/raw/8e026276968d6a5bd0c2c5e13add05a955931442/gitalias.txt",
-    "hash": "7752307bf0685d0e0ce80276b49c4da4d2842d5a303f4b49b2de130ca7dcf3a7",
+    "url": "https://github.com/GitAlias/gitalias/raw/db6b6f7c3ed5da17ff038c6bf2ee3b7ee65aab7c/gitalias.txt",
+    "hash": "9d2e699902239c7927aaf8559f2f9530978738504b6b7073c4a8221e5afabcaa",
     "pre_install": "Rename-Item -Path \"$dir\\gitalias.txt\" -NewName \".gitalias\" -Force | Out-Null",
     "checkver": {
         "url": "https://github.com/GitAlias/gitalias/commits/main/gitalias.txt.atom",
