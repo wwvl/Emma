@@ -60,11 +60,10 @@
     "uninstaller": {
         "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" }"
     },
-    "bin": "Cursor.exe",
     "shortcuts": [
         [
             "Cursor.exe",
-            "Cursor"
+            "Cursor 0.42.5"
         ]
     ]
 }
