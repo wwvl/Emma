@@ -1,19 +1,19 @@
 {
-    "version": "6.2.0.517",
+    "version": "6.2.2.520",
     "description": "Wise Data Recovery is a free data recovery tool, it helps you quickly recover deleted photos, documents, videos, email, etc. from local drives, external drive, USB drive, SD card, mobile phone and other removable devices. One of the best Windows un-deletion tools.",
     "homepage": "https://www.wisecleaner.com/wise-data-recovery.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WDR_6.2.0.517.zip",
-    "hash": "3b1d6c2d2feef3cef61e93133c9df233e29d085589e7fffb4e719b68e9096578",
+    "url": "https://downloads.wisecleaner.com/soft/WDR_6.2.2.520.zip",
+    "hash": "556c80b4f493ca37f2672ed684f4507d9d684e92c24b6a8e9e68c52e08d46cc8",
     "architecture": {
         "64bit": {
-            "extract_dir": "WDR_6.2.0.517\\WDR_6.2.0.517(x64)"
+            "extract_dir": "WDR_6.2.2.520\\WDR_6.2.2.520(x64)"
         },
         "32bit": {
-            "extract_dir": "WDR_6.2.0.517\\WDR_6.2.0.517(x86)"
+            "extract_dir": "WDR_6.2.2.520\\WDR_6.2.2.520(x86)"
         }
     },
     "pre_install": [
