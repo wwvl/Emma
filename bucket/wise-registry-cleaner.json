@@ -1,14 +1,14 @@
 {
-    "version": "11.2.2.726",
+    "version": "11.2.3.728",
     "description": "Use Wise Registry Cleaner to clean invalid registry entries, fix Windows registry errors, defragment Windows registry, and keep your PC performing at its best.",
     "homepage": "https://www.wisecleaner.com/wise-registry-cleaner.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WRCFree_11.2.2.726.zip",
-    "hash": "6f575d44245e0c9a6218c0f163964415ad0101273e9052c9a882dd1377e7e88a",
-    "extract_dir": "WRCFree_11.2.2.726",
+    "url": "https://downloads.wisecleaner.com/soft/WRCFree_11.2.3.728.zip",
+    "hash": "b9e990799705e9e3c33d49d715984cb05bd01e41d2edb877096d2338e3d4e1d3",
+    "extract_dir": "WRCFree_11.2.3.728",
     "pre_install": [
         "# Portable",
         "$presist_files = @('config.ini')",
