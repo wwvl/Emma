@@ -1,19 +1,19 @@
 {
-    "version": "4.2.3.129",
+    "version": "4.2.4.132",
     "description": "The best free RAM (memory) cleaning and optimization tool for Windows computers. It can help you free up memory in use, increase available memory, defrag memory, and empty standby memory to get your computer running smoothly again.",
     "homepage": "https://www.wisecleaner.com/wise-memory-optimizer.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WMO_4.2.3.129.zip",
-    "hash": "718ce36f6f41c06f4f31e7facafd3811e9a56e895fcd45788d51a563cc348261",
+    "url": "https://downloads.wisecleaner.com/soft/WMO_4.2.4.132.zip",
+    "hash": "5616010dfdc2df13daad7ee32f67c1a9f526375d7334aef8464c1113d280c47a",
     "architecture": {
         "64bit": {
-            "extract_dir": "WMO_4.2.3.129\\WMO_4.2.3.129(x64)"
+            "extract_dir": "WMO_4.2.4.132\\WMO_4.2.4.132(x64)"
         },
         "32bit": {
-            "extract_dir": "WMO_4.2.3.129\\WMO_4.2.3.129(x86)"
+            "extract_dir": "WMO_4.2.4.132\\WMO_4.2.4.132(x86)"
         }
     },
     "pre_install": [
