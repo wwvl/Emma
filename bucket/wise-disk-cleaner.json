@@ -1,5 +1,5 @@
 {
-    "version": "11.2.7.847",
+    "version": "11.2.8.848",
     "description": "Download Wise Disk Cleaner to clean up your disk of useless and outdated junk files, browser traces, cookies, and history on your disks. Free up your disk space, protect your privacy, and make your PC run faster.",
     "homepage": "https://www.wisecleaner.com/wise-disk-cleaner.html",
     "license": {
@@ -8,7 +8,7 @@
     },
     "url": "https://downloads.wisecleaner.com/soft/WDCFree_11.1.5.831.zip",
     "hash": "572cbedfd47546956569dfd23c7741150b467c3b439d9789fef20899df766d80",
-    "extract_dir": "WDCFree_11.2.7.847",
+    "extract_dir": "WDCFree_11.2.8.848",
     "pre_install": [
         "# Portable",
         "$presist_files = @('config.ini', 'DefragOptions.ini')",
