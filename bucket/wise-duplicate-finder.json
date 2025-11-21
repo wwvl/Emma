@@ -1,13 +1,13 @@
 {
-    "version": "2.1.8.69",
+    "version": "2.1.9.71",
     "description": "A free duplicate file cleaner. Find and remove duplicate files, photos, videos with Wise Duplicate Finder. Free up your disk space by removing duplicate files.",
     "homepage": "https://www.wisecleaner.com/wise-duplicate-finder.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WDFSetup_2.1.8.69.exe",
-    "hash": "3c3bb1c7da701c64f33cc74d2e3d00dd0fc171831d5744c3589dba0fb1beeddd",
+    "url": "https://downloads.wisecleaner.com/soft/WDFSetup_2.1.9.71.exe",
+    "hash": "096137644e54d4b088dd6c76c2a8cca56c6b58e8085aedc6e0bbd374e9ac05cb",
     "architecture": {
         "64bit": {
             "pre_install": "Get-ChildItem \"$dir\\*,1.*\" -Recurse | Rename-Item -NewName { $_.FullName -replace ',1\\.', '.' }"
