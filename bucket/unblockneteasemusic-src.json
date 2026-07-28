@@ -1,11 +1,11 @@
 {
-    "version": "0.2026.02.08.7aa15ad",
+    "version": "0.2026.07.28.39e21bf",
     "description": "UnblockNeteaseMusic. 解锁网易云音乐客户端变灰歌曲。",
     "homepage": "https://github.com/UnblockNeteaseMusic/server",
     "license": "GPL-3.0-or-later|LGPL-3.0-or-later",
-    "url": "https://github.com/UnblockNeteaseMusic/server/archive/7aa15ad92d44159d8f1ffcd94338207947cdbff2.zip",
-    "hash": "0d722d6d9ab229daee83b5042212f4a5a748aa0fe2236a50a51b33ff7ac20f53",
-    "extract_dir": "server-7aa15ad92d44159d8f1ffcd94338207947cdbff2",
+    "url": "https://github.com/UnblockNeteaseMusic/server/archive/39e21bfb4b7581f39785b190aeced201d23f0d41.zip",
+    "hash": "ff93aa9643eedbf27640d49c42263dd7de38ffa37d8e3542c1316fe0567a1f5f",
+    "extract_dir": "server-39e21bfb4b7581f39785b190aeced201d23f0d41",
     "checkver": {
         "url": "https://github.com/UnblockNeteaseMusic/server/commits/enhanced.atom",
         "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>(?<short>[0-9a-f]{7})[0-9a-f]{33})",
