@@ -1,5 +1,5 @@
 {
-    "version": "2.29.1",
+    "version": "2.29.2",
     "description": "PDM, as described, is a modern Python package and dependency manager supporting the latest PEP standards.",
     "homepage": "http://pdm.fming.dev",
     "license": "MIT",
@@ -8,8 +8,8 @@
         "Activate powershell completions by running:",
         "Add-Content -Path $Profile -Value \"`n. `\"`$(scoop prefix pdm)\\pdm_completion.ps1`\"\""
     ],
-    "url": "https://files.pythonhosted.org/packages/py3/p/pdm/pdm-2.29.1-py3-none-any.whl",
-    "hash": "6c6c536679cc6ff2cc7defba8b6e85fc8317e1e747b53f6e4e4a9bb3460980eb",
+    "url": "https://files.pythonhosted.org/packages/py3/p/pdm/pdm-2.29.2-py3-none-any.whl",
+    "hash": "b17dcc9b55b94694d63afc56053afb7d580e963bb038c753df2cd18fda71182d",
     "installer": {
         "script": [
             "Push-Location \"$dir\"",
