@@ -1,14 +1,14 @@
 {
-    "version": "2.1.1.112",
+    "version": "2.1.2.113",
     "description": "Wise Auto Shutdown is a small utility that you can use to schedule automatic shutdown, restart, sleep or logoff on your PC.",
     "homepage": "https://www.wisecleaner.com/wise-auto-shutdown.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WAS_2.1.1.112.zip",
-    "hash": "e57ce199333ed73f8dcd17c088a76b16d4f43fecead11b04e3cdb85cce436685",
-    "extract_dir": "WAS_2.1.1.112",
+    "url": "https://downloads.wisecleaner.com/soft/WAS_2.1.2.113.zip",
+    "hash": "57785a217bde5dafeb352613fb2836e740d8f6857a1a6b8eaaa973e9b13f0a2e",
+    "extract_dir": "WAS_2.1.2.113",
     "pre_install": [
         "# Portable",
         "$presist_files = @('config.ini')",
