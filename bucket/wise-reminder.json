@@ -1,13 +1,13 @@
 {
-    "version": "2.0.2.216",
+    "version": "2.0.4.219",
     "description": "Wise Reminder is a Windows scheduling utility that helps you organize daily tasks. Remind you accurately so that you won't miss any plan.",
     "homepage": "https://www.wisecleaner.com/wise-reminder.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WRMSetup_2.0.2.216.exe",
-    "hash": "21a816624850eb0fa82741d7caddd1784b456188f32ebe69d517095b98491486",
+    "url": "https://downloads.wisecleaner.com/soft/WRMSetup_2.0.4.219.exe",
+    "hash": "e62ef56938fdc36e2681d4fe3b53dba9e6d17c6fe8f204fbc4330175bf88e255",
     "innosetup": true,
     "shortcuts": [
         [
