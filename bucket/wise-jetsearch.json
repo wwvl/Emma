@@ -1,14 +1,14 @@
 {
-    "version": "5.0.1.220",
+    "version": "5.0.2.221",
     "description": "Wise JetSearch is a free local search tool to help users search everything (locate files or folders) instantly by keywords.",
     "homepage": "https://www.wisecleaner.com/wise-jetsearch.html",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wisecleaner.com/eula.html"
     },
-    "url": "https://downloads.wisecleaner.com/soft/WJS_5.0.1.220.zip",
-    "hash": "fdb28c33ee919a4112f40005a229b419a352bb6d0b0fd9e1920cab7e2a2628dc",
-    "extract_dir": "WJSSetup_5.0.1.220",
+    "url": "https://downloads.wisecleaner.com/soft/WJS_5.0.2.221.zip",
+    "hash": "7dabe885cb95c83d7baf7245cc0fce919033de4d9ed0b860db788dfe426353b4",
+    "extract_dir": "WJSSetup_5.0.2.221",
     "pre_install": [
         "# Portable",
         "$presist_files = @('config.ini')",
